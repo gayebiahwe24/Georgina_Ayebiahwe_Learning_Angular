@@ -1,7 +1,7 @@
 export interface user{
   firstname: string;
   lastname: string;
-  Age: number;
+  age: number;
   studentId: string;
-  Mobile: boolean;
+  Email: boolean;
 }
