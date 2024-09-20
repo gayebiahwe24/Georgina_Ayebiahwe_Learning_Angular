@@ -3,5 +3,5 @@ export interface user{
   lastname: string;
   age: number;
   studentId: string;
-  Email: boolean;
+  isAdmin: boolean;
 }

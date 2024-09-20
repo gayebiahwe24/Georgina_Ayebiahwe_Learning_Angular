@@ -12,10 +12,10 @@ import {user} from "./user"; // add NgIF IMPORT
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  user: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
-  user: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
-  user: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
-  user: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
-  user: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
-  user: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
+  user1: user = {firstname:'Georgina', lastname:'Ayebiahwe', age:'26', studentId:'1223343', isAdmin:'true'};
+  user2: user = {firstname:'Georgina', lastname:'Ayebiahwe', age:'26', studentId:'1223343', Email:'true'};
+  user3: user = {firstname:'Georgina', lastname:'Ayebiahwe', age:'26', studentId:'1223343', Email:'true'};
+  user4: user = {firstname:'Georgina', lastname:'Ayebiahwe', age:'26', studentId:'1223343', Email:'true'};
+  user5: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
+  user6: user = {firstname:'Georgina', lastname:'Ayebiahwe', Age:'26', studentId:'1223343', Email:'true'};
 
