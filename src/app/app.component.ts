@@ -10,4 +10,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'JavaScriptFrameworks';
+  name : string ="Georgina";
+  age : number = 22;
 }
