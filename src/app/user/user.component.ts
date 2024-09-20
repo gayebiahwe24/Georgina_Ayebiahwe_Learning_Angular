@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { User } from '@'
 @Component({
   selector: 'app-user',
   standalone: true,
@@ -8,7 +7,7 @@ import { User } from '@'
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  user: user ={
+  user:U={
 
   }
 
