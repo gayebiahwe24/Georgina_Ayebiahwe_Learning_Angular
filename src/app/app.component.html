@@ -11,7 +11,7 @@
 <div class="container">
      <div *ngFor="let user of userList" class="UserInfo">
        <h2>{{user.firstname}}</h2>
-       <p>{{user.lastname}}</p>
+       <h2>{{user.lastname}}</h2>
        <p>{{user.age}}</p>
        <p>Student Id: {{user.studentId}}</p>
 
@@ -25,3 +25,22 @@
 
 </body>
 </html>
+<style>
+  .container{
+    width:55%;
+    margin: 0 auto;
+  }
+  .UserInfo {
+    Padding: 20px;
+    background-color: darkgoldenrod;
+    border-radius: 7px;
+  }
+  h2 {
+    FontFamily: sans-serif;
+    font-style: italic;
+  }
+P{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: medium;
+}
+</style>
