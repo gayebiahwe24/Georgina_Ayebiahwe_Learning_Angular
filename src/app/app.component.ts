@@ -9,8 +9,8 @@ import {MovieListComponent} from "./movie-list/movie-list.component";
   selector: 'app-movie-list',
   standalone: true,
   imports: [RouterOutlet, NgForOf, NgClass,MovieListItemComponent,MovieListComponent],
-  templateUrl: './movie-list.component.html',
-  styleUrl: './movie-list.component.css'
+  templateUrl:'./app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   movielistItem =[
