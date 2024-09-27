@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import {NgClass, NgForOf} from "@angular/common";
 import {MovieListItemComponent} from "./movie-list-item/movie-list-item.component";
 import {MovieListComponent} from "./movie-list/movie-list.component";
+import {movie} from "./movie-list/movie";
 
 
 @Component({
@@ -13,7 +14,8 @@ import {MovieListComponent} from "./movie-list/movie-list.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  movielistItem =[
+  title = "Cool Movies";
+  movielist: movie[] =[
     {Title:'Squid', Director: 'Bill Finn', Year_Of_Release: 2018, Genre: "Comedy"},
     {Title: 'Star Wars', Director: 'Bright Sawan', Year_Of_Release: 2022,  Genre: "Action"},
     {Title: 'Blood & Water', Director: 'Andrews Collins', Year_Of_Release: 2018, Genre: "Mystery"},
