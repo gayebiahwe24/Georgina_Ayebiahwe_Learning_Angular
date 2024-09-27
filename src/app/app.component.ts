@@ -1,28 +1,31 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {NgForOf} from "@angular/common";
-import {NgIf} from "@angular/common";
-import {user} from "./user";
-import {of} from "rxjs";
-import {MovieListComponent} from "./movie-list/movie-list.component"; // add NgIF IMPORT
+import {NgClass, NgForOf} from "@angular/common";
+import {MovieListItemComponent} from "./movie-list-item/movie-list-item.component";
+import {MovieListComponent} from "./movie-list/movie-list.component";
+
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-movie-list',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, NgIf, MovieListComponent], //add ngif here too
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, NgForOf, NgClass,MovieListItemComponent,MovieListComponent],
+  templateUrl: './movie-list.component.html',
+  styleUrl: './movie-list.component.css'
 })
 export class AppComponent {
-  user1: user = {firstname: 'Georgina', lastname: 'Ayebiahwe', age: 26, studentId: '1223343', isAdmin: true};
-  user2: user = {firstname: 'Francis', lastname: 'Eastern', age: 28, studentId: '1264943', isAdmin: true};
-  user3: user = {firstname: 'Joshua', lastname: 'Bright', age: 25, studentId: '1243400', isAdmin: true};
-  user4: user = {firstname: 'Georgina', lastname: 'Anths', age: 18, studentId: '1276454', isAdmin: true};
-  user5: user = {firstname: 'Christene', lastname: 'Arthur', age: 21, studentId: '1278653', isAdmin: true};
-  user6: user = {firstname: 'Pepertual', lastname: 'Billy', age: 23, studentId: '1223893', isAdmin: true};
+  movielistItem =[
+    {Title:'Squid', Director: 'Bill Finn', Year_Of_Release: 2018, Genre: "Comedy",Image:"C:\Users\W0859914\OneDrive - St. Clair College\JavaScriptFrameworks\src\SquidMovie_img.png"},
+    {Title: 'Star Wars', Director: 'Bright Sawan', Year_Of_Release: 2022,  Genre: "Action",Image:"C:\Users\W0859914\OneDrive - St. Clair College\JavaScriptFrameworks\src\Star_Wars.png"},
+    {Title: 'Blood & Water', Director: 'Andrews Collins', Year_Of_Release: 2018, Genre: "Mystery",Image:"C:\Users\W0859914\OneDrive - St. Clair College\JavaScriptFrameworks\src\Blood&Water.png"},
+    {Title: 'Gossip Girl', Director: 'Arthur Sephia', Year_Of_Release: 1921, Genre: "Romantic",Image:"C:\Users\W0859914\OneDrive - St. Clair College\JavaScriptFrameworks\src\GossipGirl.png"},
+    {Title: 'Suits', Director: 'Billy Anthony', Year_Of_Release: 2023, Genre: "Mystery",Image:"C:\Users\W0859914\OneDrive - St. Clair College\JavaScriptFrameworks\src\Suits.png"},
+  ];
+  selectedmovielistItem:any;
 
-  userList: user[] = [this.user1, this.user2, this.user3, this.user4, this.user5, this.user6]
-  protected readonly of = of;
+
+  selectmovielistItem(item:any) {
+    this.selectedmovielistItem = item;
+  }
 
 }
 
