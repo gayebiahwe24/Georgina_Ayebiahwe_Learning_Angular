@@ -16,11 +16,11 @@ import {movie} from "./movie-list/movie";
 export class AppComponent {
   title = "Cool Movies";
   movielist: movie[] =[
-    {Title:'Squid', Director: 'Bill Finn', Year_Of_Release: 2018, Genre: "Comedy"},
-    {Title: 'Star Wars', Director: 'Bright Sawan', Year_Of_Release: 2022,  Genre: "Action"},
-    {Title: 'Blood & Water', Director: 'Andrews Collins', Year_Of_Release: 2018, Genre: "Mystery"},
-    {Title: 'Gossip Girl', Director: 'Arthur Sephia', Year_Of_Release: 1921, Genre: "Romantic"},
-    {Title: 'Suits', Director: 'Billy Anthony', Year_Of_Release: 2023, Genre: "Mystery"},
+    {Title:'Squid', Director: 'Bill Finn', Year_Of_Release: 2018, Genre: true},
+    {Title: 'Star Wars', Director: 'Bright Sawan', Year_Of_Release: 2022,  Genre: true},
+    {Title: 'Blood & Water', Director: 'Andrews Collins', Year_Of_Release: 2018, Genre: true},
+    {Title: 'Gossip Girl', Director: 'Arthur Sephia', Year_Of_Release: 1921, Genre:true},
+    {Title: 'Suits', Director: 'Billy Anthony', Year_Of_Release: 2023, Genre:true},
   ];
 }
 
