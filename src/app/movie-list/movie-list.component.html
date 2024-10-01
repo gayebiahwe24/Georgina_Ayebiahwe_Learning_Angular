@@ -1,0 +1,18 @@
+<p>movie-list works!</p>
+
+
+<div>
+  <table>
+    <tbody>
+    <tr *ngFor="let item of movielistItem" (click)="selectedmovielistItem(item)">
+    <td>{{ item.Title}}</td>
+    <td>{{ item.Director}}</td>
+    <td>{{ item.Year_Of_Release}}</td>
+    <td>{{ item.Genre}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <app-movie-list-item *ngFor="let item of movielistItem" [item] ="item"></app-movie-list-item>
+</div>
+
+
