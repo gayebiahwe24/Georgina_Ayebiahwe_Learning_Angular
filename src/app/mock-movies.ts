@@ -10,8 +10,9 @@ import {MovieListItemComponent} from "../movie-list-item/movie-list-item.compone
   templateUrl: './movie-list.component.html',
   styleUrl: './movie-list.component.css'
 })
-export const movielist[] 
-  movielistItem =[
+export const movielist;
+let movielistItem;
+movielistItem =[
     {Title:'Squid', Director: 'Bill Finn', Year_Of_Release: 2018, Genre: true, Image:'./src/Image/Blood&Water.png'},
     {Title: 'Star Wars', Director: 'Bright Sawan', Year_Of_Release: 2022,  Genre: true,Image:'./src/Image/GossipGirl.png'},
     {Title: 'Blood & Water', Director: 'Andrews Collins', Year_Of_Release: 2018, Genre:true,Image: './src/Image/SquidMovie_img.png'},
