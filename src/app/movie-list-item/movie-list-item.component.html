@@ -1,11 +1,13 @@
 <p>movie-list-item works!</p>
 
-<div style="border: 2px lightsalmon; padding: 10px;">
-      <h3>{{item.Title}}</h3>
-      <p>{{item.Director}}</p>
-      <p>{{item.Year_Of_Release}}</p>
-      <p>{{item.Genre}}</p>
-  </div>
+<!-- DatePipe -->
+<p>Release Date: {{ movie.releaseDate | date: 'MM/dd/yyyy' }}</p>
+
+<!-- UpperCasePipe -->
+<p>Genre: {{ movie.genre | uppercase }}</p>
+
+<!-- CurrencyPipe (if applicable) -->
+<p>Box Office: {{ movie.boxOffice | currency: 'USD':true }}</p>
 <style>
   h3{
     background-color: darkgoldenrod;
